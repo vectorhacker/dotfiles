@@ -25,3 +25,6 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[user]
+	email = martinezsantiagovictor@outlook.com
+	name = Victor A. Martinez

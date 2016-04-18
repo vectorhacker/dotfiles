@@ -1,0 +1,68 @@
+syntax enable
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme='powerlineish'
+" key bindings for nerdtree
+map <C-n> :NERDTreeToggle<CR>
+
+"  toggle Gundle
+map <C-g> :GundoToggle<CR>
+
+"Copy paste to/from clipboard
+vnoremap <C-c> "*y
+map <silent><Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>"
+map <silent><Leader><S-p> :set paste<CR>O<esc>"*]p:set nopaste<cr>"
+
+
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
+" resize panes
+nnoremap <silent> <Right> :vertical resize +5<cr>
+nnoremap <silent> <Left> :vertical resize -5<cr>
+nnoremap <silent> <Up> :resize +5<cr>
+nnoremap <silent> <Down> :resize -5<cr>
+
+inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <S-Tab> <c-n>
+
+" rempa leader key
+let mapleader="," 
+" Open new split panes to right and bottom, which feels more natural
+" set splitbelow
+set splitright
+let g:airline#extensions#tabline#enabled = 1
+
+set relativenumber
+
+" For mac users (using the 'apple' key)
+map <D-S-]> gt
+map <D-S-[> gT
+map <D-1> 1gt
+map <D-2> 2gt
+map <D-3> 3gt
+map <D-4> 4gt
+map <D-5> 5gt
+map <D-6> 6gt
+map <D-7> 7gt
+map <D-8> 8gt
+map <D-9> 9gt
+map <D-0> :tablast<CR>
+"
+" " for linux and windows users (using the control key)
+map <C-S-]> gt
+map <C-S-[> gT
+map <C-1> 1gt
+map <C-2> 2gt
+map <C-3> 3gt
+map <C-4> 4gt
+map <C-5> 5gt
+map <C-6> 6gt
+map <C-7> 7gt
+map <C-8> 8gt
+map <C-9> 9gt
+map <C-0> :tablast<CR>
