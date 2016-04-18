@@ -1,7 +1,7 @@
-thoughtbot dotfiles
+vectorhacker dotfiles
 ===================
 
-![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
+Based off thoughtbot
 
 Requirements
 ------------
