@@ -1,10 +1,14 @@
+" Color theme, default is solazired with a dark background
 syntax enable
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
+" Make vim-airline use the powerline fonts
+" Set the theme to powerline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
+
 " key bindings for nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
@@ -32,13 +36,16 @@ inoremap <S-Tab> <c-n>
 
 " rempa leader key
 let mapleader="," 
+
 " Open new split panes to right and bottom, which feels more natural
 " set splitbelow
 set splitright
 let g:airline#extensions#tabline#enabled = 1
 
+" Use relative numbering for line numbers
 set relativenumber
 
+" This setups tabing using mozilla like key bindings
 " For mac users (using the 'apple' key)
 map <D-S-]> gt
 map <D-S-[> gT
