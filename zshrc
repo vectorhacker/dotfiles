@@ -44,3 +44,9 @@ _load_settings "$HOME/.zsh/configs"
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+###-tns-completion-start-###
+if [ -f /Users/vectorhacker/.tnsrc ]; then 
+    source /Users/vectorhacker/.tnsrc 
+fi
+###-tns-completion-end-###
