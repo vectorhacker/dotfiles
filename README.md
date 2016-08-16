@@ -15,7 +15,7 @@ Install
 
 Clone onto your laptop:
 
-    git clone git://github.com/vectorhacker/dotfiles.git
+    git clone git://gitlab.plazsa.com/vectorhacker/dotfiles.git
 
 (Or, [fork and keep your fork
 updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
@@ -24,6 +24,10 @@ Install [rcm](https://github.com/thoughtbot/rcm):
 
     brew tap thoughtbot/formulae
     brew install rcm
+
+Install cmake, gcc, python2.7, golang, and rust
+
+    brew install cmake python2.7 golang rust
 
 Install the dotfiles:
 
