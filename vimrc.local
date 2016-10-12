@@ -1,12 +1,19 @@
 " Color theme, default is solazired with a dark background
+
 syntax on
 let g:solarized_termcolors=256
-colorscheme onedark
+set background=light
+colorscheme pencil
+
+set wrap
+set linebreak
+set nolist  " list disables linebreak
+set textwidth=0
+set wrapmargin=0
 
 " Make vim-airline use the powerline fonts
 " Set the theme to powerline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='term'
 
 " key bindings for nerdtree
 map <C-n> :NERDTreeToggle<CR>
@@ -72,3 +79,5 @@ map <C-7> 7gt
 map <C-8> 8gt
 map <C-9> 9gt
 map <C-0> :tablast<CR>
+
+nmap <F8> :TagbarToggle<CR>
