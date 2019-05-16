@@ -27,3 +27,8 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+	email = victor@alqmy.io
+	name = Victor A Martinez
+[http]
+	proxy = 
